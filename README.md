@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/DanKRT-Star/product-preview-card-component-main
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://product-preview-card-component-main-two-omega.vercel.app/
 
 ## My process
 
