@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --Green-500: hsl(158, 36%, 37%);
+      --Green-700: hsl(158, 42%, 18%);
+      --Black: hsl(212, 21%, 14%);
+      --Grey: hsl(228, 12%, 48%);
+      --Cream: hsl(30, 38%, 92%);
+      --White: hsl(0, 0%, 100%);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      height: 100vh;
+      font-size: 14px;
+      color: var(--Grey);
+    }
+
+    h1 {
+      font-family: 'Fraunces';
+      color: var(--Black);
+    }
+
+    main {
+      height: 100%;
+      background-color: var(--Cream);
+      padding-top: 20px;
+      overflow: auto;
+    }
+
+    .preview-card {
+      background-color: var(--White);
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .preview-card picture,
+    .preview-card picture img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .preview-card .product-info {
+      padding: 20px;
+    }
+
+    .preview-card .product-info > p:first-of-type {
+      margin-top: 0;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+
+    }
+
+    .product-info .price {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      text-align: start;
+      gap: 20px;
+    }
+
+    .price h1 {
+      color: var(--Green-500);
+    }
+
+    .price p {
+      text-decoration: line-through;
+    }
+
+    .product-info button {
+      outline: none;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      background-color: var(--Green-500);
+      padding: 15px;
+      color: var(--White);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: var(--Green-500); }
+
+     @media  screen and (min-width: 470px) {
+      .preview-card {
+
+        display: flex;
+        max-width: 590px;
+      }
+
+      .preview-card picture {
+        flex: 1
+      }
+      
+      .preview-card picture img {
+        height: 100%;
+      }
+
+      .preview-card .product-info {
+        flex: 1;
+      }
+    } 
+  </style>
+</head>
+<body>
+  <main>
+    <div class="preview-card">
+      <picture>
+        <source srcset="./images/image-product-desktop.jpg" media="(min-width: 470px)">
+        <img src="./images/image-product-mobile.jpg" alt="product image">
+      </picture>
+
+      <div class="product-info">
+        <p>Perfume</p>
+
+        <h1>Essence Eau De Parfum</h1> 
+
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+        <div class="price">
+          <h1>$149.99</h1>
+          <p>$169.99</p>
+        </div>      
+        <button>
+          <img src="./images/icon-cart.svg" alt="Cart" style="vertical-align: middle; margin-right: 10px; width: 16px; height: 16px;">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Lê Mạnh Đan</a>.
+    </div>
+  </main>
+</body>
+</html>
