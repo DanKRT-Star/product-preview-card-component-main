@@ -73,8 +73,10 @@ In future projects, I want to focus more on accessibility, advanced CSS techniqu
 
 ## Author
 
-- Website - [Your Name](https://your-website.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@DanKRT-Star]https://www.frontendmentor.io/profile/DanKRT-Star
+- Facebook - [Lê Mạnh Đan](https://www.facebook.com/le.manh.an.887330)
+- Gmail - [Lê Mạnh Đan] (tonyle1207@gmail.com)
+- Github - [Lê Mạnh Đan] (https://github.com/DanKRT-Star)
 
 ## Acknowledgments
 
